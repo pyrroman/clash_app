@@ -1,2 +1,13 @@
-<h1>StaticPages#about</h1>
-<p>Find me in app/views/static_pages/about.html.erb</p>
+<% provide(:title, "About") %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= yield(:title) %> | Clash of Clans Statistics App</title>
+  </head>
+  <body>
+    <h1>Clash of Clans Statistics</h1>
+    <p>
+      This is the about page for the Clash of Clans statistics application.
+    </p>
+  </body>
+</html>
